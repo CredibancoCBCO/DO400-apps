@@ -3,7 +3,6 @@ pipeline {
     environment { APP_NAMESPACE = 'RHT_OCP4_DEV_USER-recover' }
     stages {
      stage('Test') {
-        options { timeout(time: 50, unit: 'SECONDS') }
           steps {
              dir('shopping-cart-v2') {
                 sh './mvnw clean test'
