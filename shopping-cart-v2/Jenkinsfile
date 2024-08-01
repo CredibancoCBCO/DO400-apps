@@ -2,7 +2,7 @@ pipeline {
     agent { node { label 'maven' } }
     environment { APP_NAMESPACE = 'RHT_OCP4_DEV_USER-recover' }
     stages {
-        stage('Test') {
+        stage('Test1') {
             steps {
                 dir('shopping-cart-v2') {
                     sh './mvnw clean test'
