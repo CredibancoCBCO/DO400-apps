@@ -36,7 +36,6 @@ public class ShoppingCartTest {
 
         QuarkusMock.installMockForType(mockStorage, CatalogStorage.class);
     }
-}
 
     @BeforeEach
     void clearCart() {
